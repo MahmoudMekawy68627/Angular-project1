@@ -1,0 +1,10 @@
+
+    <div class="item">
+        <img [src]="productData.image" alt="" class="w-100" >
+        <div class="card-body">
+            <h5 class="card-title">{{productData.title}}</h5>
+            <p class="card-text">{{productData.description}}</p>
+            <p class="card-text">Price = {{productData.price | currency:"EGP "}} </p>
+            <a class="btn btn-primary" [routerLink]="['/cardlist/card/',productData.id]">Add Card</a>
+        </div>
+    </div>

@@ -1,0 +1,3 @@
+<div class="row" >
+    <app-card *ngFor="let product of productlist" [productData]="product" (messageFromChild)="actionFromParent($event)" class="col-md-4"></app-card>
+</div>
